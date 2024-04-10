@@ -3,7 +3,7 @@ body{
 }
 
 header{
-    background-image: linear-gradient(rgb(43, 149, 181), white);
+    background-image: linear-gradient(rgb(43, 149, 181), rgb(210, 239, 255));
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     height: 100px;
@@ -15,7 +15,13 @@ header{
     justify-content: center;
     align-items: center;
     height: 40vh;
+    margin-top: 80px;
+}
 
-    
+.not-Active{
+    display: none;
+}
+
+.thanks{
     
 }
