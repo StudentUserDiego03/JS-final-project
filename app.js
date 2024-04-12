@@ -2,6 +2,8 @@
 const registerScreen = document.querySelector(".register");
 const Thanks = document.querySelector(".thanks");
 const accountSection = document.querySelector(".account");
+const color_list = document.querySelector("color-options");
+
 
 function register(){
     let userName = document.getElementById("user-name").value;
@@ -32,4 +34,19 @@ function log(){
     }
     document.getElementById("Welcome").innerHTML="Welcome back " + localStorage.getItem("USERNAME");}
     
+}
+
+function paste(){
+    let ContentSpace = "";
+    let pasteContent = document.getElementById("text-input").value;
+    
+    ContentSpace += pasteContent + "<br>";
+        
+
+    document.getElementById("clip-board").innerHTML= ContentSpace;
+}
+
+function whiteGreen(){
+    document.getElementById("header-color").style.backgroundImage="linear-gradient(rgb(43, 149, 0), rgb(210, 239, 255))";
+    document.getElementById("settings-color").style.backgroundColor="green";
 }

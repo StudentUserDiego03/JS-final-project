@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <header>
+    <header id="header-color">
         <h1>Cloud Space</h1>
     </header>
 
@@ -25,6 +25,32 @@
 
     <section class="account not-Active">
         <h2 id="Welcome"></h2>
+
+        
+        <div class="account-overall">
+        <div class="account-work-space">
+        <p>Input text</p>
+        <input type="text" id="text-input" value="">
+        <button onclick="paste()">paste</button>
+
+        <div class="text">
+        <p id="clip-board"></p>
+        </div>
+
+        </div>
+
+        <div id="settings-color" class="settings">
+            <h3>Settings</h3>
+            <button onclick="reveal()">color options</button>
+            <div class="color-options">
+                <button>blue/white</button><br>
+                <button onclick="whiteGreen()">green/white</button><br>
+                <button>red/white</button><br>
+            </div>
+        </div>
+        </div>
+        
+
     </section>
 
 

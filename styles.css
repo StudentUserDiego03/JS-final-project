@@ -25,3 +25,26 @@ header{
 .thanks{
     
 }
+
+.account-work-space{
+    background-image: linear-gradient(rgb(153, 153, 153), rgb(203, 203, 203));
+    border-radius: 7px;
+    height: 500px;
+    width: 1000px;
+}
+.account-overall{
+    display: flex;
+    
+}
+.settings{
+    color: blue;
+    background-color: rgb(25, 133, 169);
+    border-radius: 7px;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.text{
+    background-color: white;
+    width: fit-content;
+}
