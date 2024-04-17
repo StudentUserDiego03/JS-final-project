@@ -2,7 +2,9 @@
 const registerScreen = document.querySelector(".register");
 const Thanks = document.querySelector(".thanks");
 const accountSection = document.querySelector(".account");
-const color_list = document.querySelector("color-options");
+const color_list = document.querySelector(".color-options");
+const color_button=document.querySelector(".color-button");
+const color_close_button=document.querySelector(".close-color-button");
 
 
 function register(){
@@ -46,7 +48,44 @@ function paste(){
     document.getElementById("clip-board").innerHTML= ContentSpace;
 }
 
+
+
+
+function WhiteBlue(){
+    document.getElementById("header-color").style.backgroundImage="linear-gradient(rgb(43, 149, 181), rgb(120, 208, 255))";
+    document.getElementById("settings-color").style.backgroundColor="rgb(43, 149, 181)";
+}
+
 function whiteGreen(){
-    document.getElementById("header-color").style.backgroundImage="linear-gradient(rgb(43, 149, 0), rgb(210, 239, 255))";
-    document.getElementById("settings-color").style.backgroundColor="green";
+    document.getElementById("header-color").style.backgroundImage="linear-gradient(rgb(50, 193, 59), rgb(210, 239, 255))";
+    document.getElementById("settings-color").style.backgroundColor="rgb(50, 193, 59)";
+}
+
+function white_red(){
+    document.getElementById("header-color").style.backgroundImage="linear-gradient(rgb(219, 66, 66), rgb(208, 114, 116))"
+    document.getElementById("settings-color").style.backgroundColor="rgb(219, 66, 66)";
+}
+
+function reveal(){
+    if(color_list.classList.contains("not-Active")){
+        color_list.classList.remove("not-Active");
+    }
+    if(!color_button.classList.contains("not_Active")){
+        color_button.classList.add("not-Active")
+    }
+    if(color_close_button.classList.contains("not-Active")){
+        color_close_button.classList.remove("not-Active")
+    }
+    
+}
+function hide(){
+    if(!color_list.classList.contains("not-Active")){
+        color_list.classList.add("not-Active");
+    }
+    if(!color_close_button.classList.contains("not_Active")){
+        color_close_button.classList.add("not-Active")
+    }
+    if(color_button.classList.contains("not-Active")){
+        color_button.classList.remove("not-Active")
+    }    
 }

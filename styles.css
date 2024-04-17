@@ -3,10 +3,11 @@ body{
 }
 
 header{
-    background-image: linear-gradient(rgb(43, 149, 181), rgb(210, 239, 255));
+    background-image: linear-gradient(rgb(43, 149, 181), rgb(120, 208, 255));
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     height: 100px;
+    border-radius: 7px;
 }
 
 .register{
@@ -32,13 +33,15 @@ header{
     height: 500px;
     width: 1000px;
 }
+
 .account-overall{
     display: flex;
     
 }
 .settings{
-    color: blue;
-    background-color: rgb(25, 133, 169);
+    color: white;
+    background-color: rgb(43, 149, 181);
+    
     border-radius: 7px;
     width: 300px;
     margin-left: 20px;
@@ -46,5 +49,8 @@ header{
 
 .text{
     background-color: white;
-    width: fit-content;
+    width: 800px;
+    height:200px;
+    border-radius: 7px;
+    
 }

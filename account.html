@@ -29,25 +29,30 @@
         
         <div class="account-overall">
         <div class="account-work-space">
+        <main style="margin-inline-start: 10px;">
         <p>Input text</p>
         <input type="text" id="text-input" value="">
         <button onclick="paste()">paste</button>
 
         <div class="text">
         <p id="clip-board"></p>
+        <main>
         </div>
 
         </div>
 
         <div id="settings-color" class="settings">
+            <main style="margin-inline-start: 10px;">
             <h3>Settings</h3>
-            <button onclick="reveal()">color options</button>
-            <div class="color-options">
-                <button>blue/white</button><br>
+            <button class="color-button" onclick="reveal()">color options</button>
+            <button class="close-color-button not-Active" onclick="hide()">close color options</button>
+            <div class="color-options not-Active">
+                <button onclick="WhiteBlue()">blue/white</button><br>
                 <button onclick="whiteGreen()">green/white</button><br>
-                <button>red/white</button><br>
+                <button onclick="white_red()">red/white</button><br>
             </div>
         </div>
+            </main>
         </div>
         
 
