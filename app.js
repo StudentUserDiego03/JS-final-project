@@ -39,13 +39,10 @@ function log(){
 }
 
 function paste(){
-    let ContentSpace = "";
-    let pasteContent = document.getElementById("text-input").value;
-    
-    ContentSpace += pasteContent + "<br>";
-        
 
-    document.getElementById("clip-board").innerHTML= ContentSpace;
+    let content = document.getElementById("clip-board");    
+    let pasteContent = document.getElementById("text-input").value;
+    content.innerHTML += pasteContent + "<br>";
 }
 
 
@@ -57,7 +54,7 @@ function WhiteBlue(){
 }
 
 function whiteGreen(){
-    document.getElementById("header-color").style.backgroundImage="linear-gradient(rgb(50, 193, 59), rgb(210, 239, 255))";
+    document.getElementById("header-color").style.backgroundImage="linear-gradient(rgb(50, 193, 59), rgb(82, 207, 149))";
     document.getElementById("settings-color").style.backgroundColor="rgb(50, 193, 59)";
 }
 
@@ -88,4 +85,9 @@ function hide(){
     if(color_button.classList.contains("not-Active")){
         color_button.classList.remove("not-Active")
     }    
+}
+
+function save(){
+    let text_content = document.getElementById("clip-board").innerHTML;
+    localStorage.setItem("saved_text", text_content);
 }

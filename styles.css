@@ -8,6 +8,16 @@ header{
     color: white;
     height: 100px;
     border-radius: 7px;
+    display: flex;
+    align-items: center;    
+}
+header h1{
+    margin-inline-start: 10px;
+}
+
+header p{
+    margin-inline-start: 20px;
+    margin-top: 28px;
 }
 
 .register{
@@ -31,7 +41,7 @@ header{
     background-image: linear-gradient(rgb(153, 153, 153), rgb(203, 203, 203));
     border-radius: 7px;
     height: 500px;
-    width: 1000px;
+    width: 2000px;
 }
 
 .account-overall{
@@ -43,14 +53,45 @@ header{
     background-color: rgb(43, 149, 181);
     
     border-radius: 7px;
-    width: 300px;
+    width: 600px;
     margin-left: 20px;
 }
 
 .text{
     background-color: white;
     width: 800px;
-    height:200px;
+    padding:10px;
+    height:fit-content;
     border-radius: 7px;
+    margin-top: 10px;
+    margin-bottom: 5px;
     
+}
+
+
+.color-button{
+    background-image: linear-gradient(white, rgb(185, 185, 185));
+    border: none;
+    padding: 7px;
+    border-radius: 7px;
+}
+.color-button:hover{
+    background-image: linear-gradient(white, rgb(143, 143, 143));
+}
+
+.close-color-button{
+    background-image: linear-gradient(white, rgb(185, 185, 185));
+    border: none;
+    padding: 7px;
+    border-radius: 7px;
+}
+.close-color-button:hover{
+    background-image: linear-gradient(white, rgb(143, 143, 143));
+}
+
+.button-element{
+    background-image: linear-gradient(rgb(65, 217, 237), rgb(185, 185, 185));
+    border: none;
+    padding: 7px;
+    border-radius: 7px;
 }
