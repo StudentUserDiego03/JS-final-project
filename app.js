@@ -90,4 +90,5 @@ function hide(){
 function save(){
     let text_content = document.getElementById("clip-board").innerHTML;
     localStorage.setItem("saved_text", text_content);
+    document.getElementById("note").innerHTML="All content has been saved";
 }

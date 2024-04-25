@@ -1,5 +1,6 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
 }
 
 header{
@@ -41,7 +42,7 @@ header p{
     background-image: linear-gradient(rgb(153, 153, 153), rgb(203, 203, 203));
     border-radius: 7px;
     height: 500px;
-    width: 2000px;
+    width: 1000px;
 }
 
 .account-overall{
@@ -53,8 +54,8 @@ header p{
     background-color: rgb(43, 149, 181);
     
     border-radius: 7px;
-    width: 600px;
-    margin-left: 20px;
+    width: 480px;
+    margin-left: 10px;
 }
 
 .text{
@@ -90,8 +91,27 @@ header p{
 }
 
 .button-element{
-    background-image: linear-gradient(rgb(65, 217, 237), rgb(185, 185, 185));
+    background-image: linear-gradient(white, rgb(185, 185, 185));
     border: none;
     padding: 7px;
     border-radius: 7px;
+}
+.button-element:hover{
+    background-image: linear-gradient(white, rgb(143, 143, 143));
+}
+
+
+@media (max-width: 970px){
+    .account-overall{
+        display: block;
+    }
+
+    .account-work-space{
+        width: auto;
+    }
+    .settings{
+        width: auto;
+        margin-left: auto;
+        height: 200px;
+    }
 }
