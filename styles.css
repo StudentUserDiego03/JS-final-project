@@ -114,6 +114,9 @@ header p{
         margin-left: auto;
         height: 200px;
     }
+    .text{
+        width:830px;
+    }
 }
 @media (max-width: 330px){
     .text{
