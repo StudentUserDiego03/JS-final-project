@@ -25,9 +25,9 @@ const log_info_2 = localStorage.getItem("PASSWORD");
 function log(){
     let userNameLog = document.getElementById("info-1").value;
     let PasswordLog = document.getElementById("info-2").value;
-    if(!log_info == userNameLog || !log_info==PasswordLog){
+    if(!log_info == userNameLog || !log_info_2==PasswordLog){
         document.getElementById("error").innerHTML="error";
-    } else{
+    } else if(log_info == userNameLog && log_info_2==PasswordLog){
     if(accountSection.classList.contains("not-Active")){
         accountSection.classList.remove("not-Active")
     }
